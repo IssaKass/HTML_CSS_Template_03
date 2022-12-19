@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <title>DigiMedia</title>
+
+    <!-- Google Maps Style -->
+    <style>
+      .mapouter {
+        position: relative;
+        text-align: right;
+        width: 100%;
+        height: 640px;
+      }
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        width: 100%;
+        height: 640px;
+      }
+      .gmap_iframe {
+        height: 640px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <nav class="main-nav">
+          <!-- Logo Start -->
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="" />
+          </a>
+          <!-- Logo End -->
+          <!-- Menu Start -->
+          <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#quote" class="main-button">Free Quote</a></li>
+          </ul>
+          <a class="menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <!-- Menu End -->
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Home Start -->
+    <div class="home" id="home">
+      <div class="container">
+        <div class="wrapper">
+          <!-- Left Banner Start -->
+          <div class="banner left-banner">
+            <h6>Digital media agency</h6>
+            <h2>We boost yor website traffic</h2>
+            <p>
+              This template is brought to you by TemplateMo website. Feel free
+              to use this for a commercial purpose. You are not allowed to
+              redistribute the template ZIP file on any other template website.
+              Thank you.
+            </p>
+            <a href="#quote" class="main-button">Free quote</a>
+          </div>
+          <!-- Left Banner End -->
+          <!-- Right Banner Start -->
+          <div class="banner right-banner">
+            <img src="images/slider-dec.png" alt="" />
+          </div>
+          <!-- Right Banner End -->
+        </div>
+      </div>
+    </div>
+    <!-- Home End -->
+
+    <!-- About Start -->
+    <div class="about section" id="about">
+      <div class="container">
+        <div class="wrapper">
+          <!-- Left Banner Start -->
+          <div class="banner left-banner">
+            <img src="images/about-dec.png" alt="" />
+          </div>
+          <!-- Left Banner End -->
+          <!-- Right Banner Start -->
+          <div class="banner right-banner">
+            <!-- Section Heading Start -->
+            <div class="section-heading">
+              <h6>About us</h6>
+              <h4>Who is designing <span>agency</span></h4>
+              <div class="line-dec"></div>
+            </div>
+            <!-- Section Heading End -->
+            <p>
+              We hope this DigiMedia template is useful for your work. You can
+              use this template for any purpose. You may contribute a little
+              amount via PayPal to support TemplateMo in creating new templates
+              regularly.
+            </p>
+            <!-- Skills Start -->
+            <div class="skills wrapper">
+              <!-- Skill Start -->
+              <div
+                class="skill"
+                style="--progress-c: var(--orange); --progress-v: 90%"
+              >
+                <div class="skill-content">
+                  <strong data-progress="90%"></strong>
+                  <span>Coding</span>
+                </div>
+              </div>
+              <!-- Skill End -->
+              <!-- Skill Start -->
+              <div
+                class="skill"
+                style="--progress-c: var(--purple); --progress-v: 80%"
+              >
+                <div class="skill-content">
+                  <strong data-progress="80%"></strong>
+                  <span>Photoshop</span>
+                </div>
+              </div>
+              <!-- Skill End -->
+              <!-- Skill Start -->
+              <div
+                class="skill"
+                style="--progress-c: var(--lt-orange); --progress-v: 80%"
+              >
+                <div class="skill-content">
+                  <strong data-progress="80%"></strong>
+                  <span>Animation</span>
+                </div>
+              </div>
+              <!-- Skill End -->
+            </div>
+            <!-- Skills End -->
+          </div>
+          <!-- Right Banner End -->
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Services Start -->
+    <div class="services section" id="services">
+      <div class="container">
+        <!-- Section Heading Start -->
+        <div class="section-heading">
+          <h6>Our services</h6>
+          <h4>What our agency <span>provides</span></h4>
+          <div class="line-dec"></div>
+        </div>
+        <!-- Section Heading End -->
+      </div>
+      <div class="container">
+        <div class="wrapper">
+          <!-- Input Start -->
+          <input type="radio" name="srv" id="srv1" checked />
+          <input type="radio" name="srv" id="srv2" />
+          <input type="radio" name="srv" id="srv3" />
+          <input type="radio" name="srv" id="srv4" />
+          <input type="radio" name="srv" id="srv5" />
+          <!-- Input End -->
+          <!-- Menu Start -->
+          <div class="menu">
+            <label for="srv1" id="service1">
+              <span class="icon">
+                <img src="images/service-icon-01.png" alt="" />
+              </span>
+              <div class="text">Apartements</div>
+            </label>
+
+            <label for="srv2" id="service2">
+              <span class="icon">
+                <img src="images/service-icon-02.png" alt="" />
+              </span>
+              <div class="text">Food & Life</div>
+            </label>
+
+            <label for="srv3" id="service3">
+              <span class="icon">
+                <img src="images/service-icon-03.png" alt="" />
+              </span>
+              <div class="text">Cars</div>
+            </label>
+
+            <label for="srv4" id="service4">
+              <span class="icon">
+                <img src="images/service-icon-02.png" alt="" />
+              </span>
+              <div class="text">Shopping</div>
+            </label>
+
+            <label for="srv5" id="service5">
+              <span class="icon">
+                <img src="images/service-icon-01.png" alt="" />
+              </span>
+              <div class="text">Traveling</div>
+            </label>
+          </div>
+          <!-- Menu End -->
+          <!-- Services Content Start -->
+          <div class="services-content carousel">
+            <div class="slides">
+              <div class="service" id="serviceContent1">
+                <!-- Left Side Start -->
+                <div class="holder left-side">
+                  <h6>SEO Analysis & Daily Reports</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Saepe unde deserunt voluptatum odio voluptatibus recusandae
+                    necessitatibus animi suscipit, mollitia odit voluptas
+                    eveniet quidem rem officia veniam libero laboriosam debitis
+                    quo!
+                  </p>
+                  <ul class="ticks-list">
+                    <li>Optimized Template</li>
+                    <li>Data Info</li>
+                    <li>SEO Analysis</li>
+                    <li>SEO Analysis</li>
+                    <li>Data Info</li>
+                    <li>Optimized Template</li>
+                  </ul>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, corrupti odio alias.
+                  </p>
+                </div>
+                <!-- Left Side End -->
+                <!-- Right Side Start -->
+                <div class="holder right-side">
+                  <img src="images/services-image.jpg" alt="" />
+                </div>
+                <!-- Right Side End -->
+              </div>
+              <div class="service" id="serviceContent2">
+                <!-- Left Side Start -->
+                <div class="holder left-side">
+                  <h6>Healthy Food & Life</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Saepe unde deserunt voluptatum odio voluptatibus recusandae
+                    necessitatibus animi suscipit, mollitia odit voluptas
+                    eveniet quidem rem officia veniam libero laboriosam debitis
+                    quo!
+                  </p>
+                  <ul class="ticks-list">
+                    <li>Optimized Template</li>
+                    <li>Data Info</li>
+                    <li>SEO Analysis</li>
+                    <li>SEO Analysis</li>
+                    <li>Data Info</li>
+                    <li>Optimized Template</li>
+                  </ul>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, corrupti odio alias.
+                  </p>
+                </div>
+                <!-- Left Side End -->
+                <!-- Right Side Start -->
+                <div class="holder right-side">
+                  <img src="images/services-image-02.jpg" alt="" />
+                </div>
+                <!-- Right Side End -->
+              </div>
+              <div class="service" id="serviceContent3">
+                <!-- Left Side Start -->
+                <div class="holder left-side">
+                  <h6>Car Re-search & Transport</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Saepe unde deserunt voluptatum odio voluptatibus recusandae
+                    necessitatibus animi suscipit, mollitia odit voluptas
+                    eveniet quidem rem officia veniam libero laboriosam debitis
+                    quo!
+                  </p>
+                  <ul class="ticks-list">
+                    <li>Optimized Template</li>
+                    <li>Data Info</li>
+                    <li>SEO Analysis</li>
+                    <li>SEO Analysis</li>
+                    <li>Data Info</li>
+                    <li>Optimized Template</li>
+                  </ul>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, corrupti odio alias.
+                  </p>
+                </div>
+                <!-- Left Side End -->
+                <!-- Right Side Start -->
+                <div class="holder right-side">
+                  <img src="images/services-image-03.jpg" alt="" />
+                </div>
+                <!-- Right Side End -->
+              </div>
+              <div class="service" id="serviceContent4">
+                <!-- Left Side Start -->
+                <div class="holder left-side">
+                  <h6>Online Shopping & Tracking ID</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Saepe unde deserunt voluptatum odio voluptatibus recusandae
+                    necessitatibus animi suscipit, mollitia odit voluptas
+                    eveniet quidem rem officia veniam libero laboriosam debitis
+                    quo!
+                  </p>
+                  <ul class="ticks-list">
+                    <li>Optimized Template</li>
+                    <li>Data Info</li>
+                    <li>SEO Analysis</li>
+                    <li>SEO Analysis</li>
+                    <li>Data Info</li>
+                    <li>Optimized Template</li>
+                  </ul>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, corrupti odio alias.
+                  </p>
+                </div>
+                <!-- Left Side End -->
+                <!-- Right Side Start -->
+                <div class="holder right-side">
+                  <img src="images/services-image-04.jpg" alt="" />
+                </div>
+                <!-- Right Side End -->
+              </div>
+              <div class="service" id="serviceContent5">
+                <!-- Left Side Start -->
+                <div class="holder left-side">
+                  <h6>Enjoy & Travel</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Saepe unde deserunt voluptatum odio voluptatibus recusandae
+                    necessitatibus animi suscipit, mollitia odit voluptas
+                    eveniet quidem rem officia veniam libero laboriosam debitis
+                    quo!
+                  </p>
+                  <ul class="ticks-list">
+                    <li>Optimized Template</li>
+                    <li>Data Info</li>
+                    <li>SEO Analysis</li>
+                    <li>SEO Analysis</li>
+                    <li>Data Info</li>
+                    <li>Optimized Template</li>
+                  </ul>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae, corrupti odio alias.
+                  </p>
+                </div>
+                <!-- Left Side End -->
+                <!-- Right Side Start -->
+                <div class="holder right-side">
+                  <img src="images/services-image.jpg" alt="" />
+                </div>
+                <!-- Right Side End -->
+              </div>
+            </div>
+          </div>
+          <!-- Services Content End -->
+        </div>
+      </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Quote Start -->
+    <div class="quote section" id="quote">
+      <div class="container">
+        <!-- Section Heading Start -->
+        <div class="section-heading">
+          <h6>Get your free quote</h6>
+          <h4>Grow with us now</h4>
+          <div class="line-dec"></div>
+        </div>
+        <!-- Section Heading End -->
+      </div>
+      <div class="container">
+        <!-- Form Start -->
+        <form action="#" id="search" method="get">
+          <input type="url" name="url" placeholder="Your website URL..." />
+          <input type="email" name="email" placeholder="Email Address..." />
+          <input type="submit" value="Get Quote Now" />
+        </form>
+        <!-- Form End -->
+      </div>
+    </div>
+    <!-- Quote End -->
+
+    <!-- Projects Start -->
+    <div class="projects section" id="projects">
+      <div class="container">
+        <!-- Section Heading Start -->
+        <div class="section-heading">
+          <h6>Our portfolio</h6>
+          <h4>See our recent <span>projects</span></h4>
+          <div class="line-dec"></div>
+        </div>
+        <!-- Section Heading End -->
+      </div>
+      <!-- Swiper Start -->
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="thumb">
+              <img src="images/portfolio-01.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h4>Website Builder</h4>
+              <span>Marketing</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="thumb">
+              <img src="images/portfolio-02.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h4>Website Builder</h4>
+              <span>Marketing</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="thumb">
+              <img src="images/portfolio-03.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h4>Website Builder</h4>
+              <span>Marketing</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="thumb">
+              <img src="images/portfolio-04.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h4>Website Builder</h4>
+              <span>Marketing</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="thumb">
+              <img src="images/portfolio-01.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h4>Website Builder</h4>
+              <span>Marketing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Swiper End -->
+    </div>
+    <!-- Projects End -->
+
+    <!-- Blog Start -->
+    <div class="blog section" id="blog">
+      <div class="container">
+        <!-- Section Heading Start -->
+        <div class="section-heading holder">
+          <h6>Recent News</h6>
+          <h4>Check our blog <span>posts</span></h4>
+          <div class="line-dec"></div>
+        </div>
+        <!-- Section Heading End -->
+      </div>
+      <div class="container wrapper">
+        <!-- Left Side Start -->
+        <div class="left-side holder">
+          <div class="blog-post">
+            <div class="image">
+              <img src="images/blog-post-01.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="top">
+                <span class="category">SEO Analysis</span>
+                <span class="date">03 August 2021</span>
+              </div>
+              <a href="#">
+                <h4>
+                  Lorem ipsum dolor sit amet, consectetur adelore eiusmod tempor
+                  incididunt
+                </h4>
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                doers itii eiumod deis tempor incididunt ut labore.
+              </p>
+              <div class="info">
+                <div class="author">
+                  <img src="images/author-post.jpg" alt="" />
+                  <span>By: Andrea Mentuzi</span>
+                </div>
+                <a href="#" class="main-button">Discover more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Left Side End -->
+        <!-- Right Side Start -->
+        <div class="right-side holder">
+          <!-- Blog Item Start -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="images/blog-post-02.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="top">
+                <span class="category">SEO Analysis</span>
+                <span class="date">24 September 2021</span>
+              </div>
+              <a href="#">
+                <h4>Lorem ipsum dolor sit amei eiusmod tempor</h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+            </div>
+          </div>
+          <!-- Blog Item End -->
+          <!-- Blog Item Start -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="images/blog-post-02.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="top">
+                <span class="category">SEO Analysis</span>
+                <span class="date">24 September 2021</span>
+              </div>
+              <a href="#">
+                <h4>Lorem ipsum dolor sit amei eiusmod tempor</h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+            </div>
+          </div>
+          <!-- Blog Item End -->
+          <!-- Blog Item Start -->
+          <div class="blog-item">
+            <div class="image">
+              <img src="images/blog-post-04.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="top">
+                <span class="category">SEO Analysis</span>
+                <span class="date">24 September 2021</span>
+              </div>
+              <a href="#">
+                <h4>Lorem ipsum dolor sit amei eiusmod tempor</h4>
+              </a>
+              <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+            </div>
+          </div>
+          <!-- Blog Item End -->
+        </div>
+        <!-- Right Side End -->
+      </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Contact Start -->
+    <div class="contact section" id="contact">
+      <div class="container">
+        <!-- Section Heading Start -->
+        <div class="section-heading">
+          <h6>Contact us</h6>
+          <h4>Get in touch with us <span>now</span></h4>
+          <div class="line-dec"></div>
+        </div>
+        <!-- Section Heading End -->
+      </div>
+      <div class="container">
+        <div class="contact-dec">
+          <img src="images/contact-dec.png" alt="" />
+        </div>
+        <form action="" id="contact">
+          <!-- Left Side Start -->
+          <!-- Map Start -->
+          <div class="mapouter left-side">
+            <div class="gmap_canvas">
+              <iframe
+                class="gmap_iframe"
+                width="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=610&amp;height=640&amp;hl=en&amp;q=Kalamoun&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe
+              ><a href="https://formatjson.org/word-counter">Word Counter</a>
+            </div>
+          </div>
+          <!-- Map End -->
+          <!-- Left Side End -->
+          <!-- Right Side Start -->
+          <div class="right-side">
+            <div class="wrapper">
+              <!-- Info Start -->
+              <div class="info">
+                <div class="holder">
+                  <div class="icon">
+                    <img src="images/phone-icon.png" alt="" />
+                  </div>
+                  <a href="tel:+96171174747">71-174-747</a>
+                </div>
+                <div class="holder">
+                  <div class="icon">
+                    <img src="images/email-icon.png" alt="" />
+                  </div>
+                  <a href="mailto:issakass02@gmail.com">issakass02@gmail.com</a>
+                </div>
+                <div class="holder">
+                  <div class="icon">
+                    <img src="images/location-icon.png" alt="" />
+                  </div>
+                  <a href="#">Kalamoun, Lebanon</a>
+                </div>
+              </div>
+              <!-- Info End -->
+              <!-- Form Registration Start -->
+              <div class="register">
+                <div class="holder">
+                  <input type="text" name="name" placeholder="Name" required />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="holder">
+                  <textarea
+                    name="messge"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="holder">
+                  <input
+                    type="submit"
+                    value="Send message now"
+                    class="main-button"
+                  />
+                </div>
+              </div>
+              <!-- Form Registration End -->
+            </div>
+          </div>
+          <!-- Right Side End -->
+        </form>
+      </div>
+    </div>
+    <!-- Contact End -->
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <p>
+          Copyright &copy; 2022 DigiMedia Co., Ltd. All Rights Reserved <br />
+          Design: <a href="https://templatemo.com/">TemplateMo</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
